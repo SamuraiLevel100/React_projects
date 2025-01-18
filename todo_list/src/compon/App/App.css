@@ -1,0 +1,66 @@
+.app-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000, #555555);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    /* transform: scale(1.5); Збільшення масштабу */
+    transform-origin: top; 
+    overflow: hidden;
+    color: white;
+}
+
+.header-container {
+    position: fixed; 
+    top: 20px; 
+    width: 100%;
+    max-width: 400px; 
+    z-index: 10; 
+    background-color: #f4f4f4; 
+    text-align: center;
+    padding-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.header-container h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.task-list {
+    margin-top: 20px; 
+    height: calc(100vh - 200px); 
+    overflow-y: auto; 
+    width: 100%;
+    max-width: 600px; 
+    min-width: 600px;
+    padding: 0;
+    list-style-type: none;
+    border-radius: 4px;
+    background-color:  transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+       
+        scrollbar-width: thin; 
+        scrollbar-color: transparent transparent;
+}
+
+.task-list::-webkit-scrollbar {
+    width: 8px; 
+    background-color: transparent; 
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border-radius: 10px;
+}
+
+.task-list::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
